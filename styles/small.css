@@ -1,0 +1,258 @@
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    background-color: #12372a;
+    color: white;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header-content img {
+    width: 50px;
+    height: 50px;
+}
+
+.header-content span {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+#menu-button {
+    margin-left: auto;
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    background-color: #222;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+nav.open ul {
+    display: block;
+}
+
+nav li {
+    border-bottom: 1px solid #444;
+}
+
+nav a {
+    display: block;
+    padding: 0.9rem 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #2e7d5b;
+}
+
+nav a.active {
+    background-color: #2e7d5b;
+}
+
+/* =========================
+   MAIN
+========================= */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    margin: 0;
+    padding: 0.5rem;
+    background-color: #12372a;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+section {
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+.section-content {
+    padding: 1rem;
+}
+
+.section-content p {
+    margin-top: 0;
+}
+
+/* =========================
+   PHOTO
+========================= */
+
+.photo-container {
+    padding: 1rem;
+    text-align: center;
+}
+
+.photo-container img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 4px;
+}
+
+/* =========================
+   COURSES
+========================= */
+
+.courses {
+    grid-column: 1 / -1;
+}
+
+.course-buttons {
+    display: flex;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.course-buttons button {
+    flex: 1;
+    padding: 0.6rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+    background-color: #ddd;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.course-buttons button:hover {
+    background-color: #2e7d5b;
+    color: white;
+}
+
+#course-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    padding: 0 1rem 1rem;
+}
+
+.course-card {
+    padding: 0.8rem;
+    text-align: center;
+    border: 1px solid #aaa;
+    background-color: #eeeeee;
+    border-radius: 4px;
+}
+
+.course-card.completed {
+    background-color: #d9f2df;
+    border: 2px solid #2e7d5b;
+}
+
+.course-card.completed::after {
+    content: " ✓ Completed";
+    font-weight: 700;
+    color: #176b3a;
+}
+
+.course-card h3 {
+    margin: 0;
+}
+
+#credits {
+    text-align: center;
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    text-align: center;
+    background-color: #12372a;
+    color: white;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-icon {
+    display: inline-block;
+    border: 1px solid white;
+    padding: 0.5rem 0.8rem;
+    border-radius: 4px;
+}
+
+.social-links a:hover .social-icon {
+    background-color: white;
+    color: #12372a;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+#lastModified {
+    font-size: 0.85rem;
+}

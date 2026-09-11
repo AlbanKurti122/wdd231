@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Alban Kurti's WDD 231 course home page featuring information about me and my Web and Computer Programming courses.">
+
+    <meta name="author" content="Alban Kurti">
+
+    <title>Alban Kurti | WDD 231</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <img src="images/logo.svg" alt="Site logo" width="50" height="50">
+            <span>Alban Kurti</span>
+
+            <button id="menu-button" aria-label="Open navigation menu">
+                ☰
+            </button>
+        </div>
+    </header>
+
+    <nav id="navigation">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="chamber/index.html">Chamber Project</a></li>
+            <li><a href="final/index.html">Final Project</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h1>Home</h1>
+
+        <div class="main-grid">
+
+            <section class="about">
+                <h2>About Me</h2>
+
+                <div class="section-content">
+                    <p>
+                        My name is Alban Kurti and I am from Albania.
+                        I am interested in technology, programming, and
+                        web development. I enjoy learning new programming
+                        languages and developing projects that help me
+                        improve my skills.
+                    </p>
+
+                    <p>
+                        I am currently studying Web Frontend Development
+                        and working toward improving my knowledge of
+                        HTML, CSS, JavaScript, and programming.
+                    </p>
+                </div>
+            </section>
+
+            <section class="photo-section">
+                <h2>Student Photo</h2>
+
+                <div class="photo-container">
+                    <img src="images/profile.jpg" alt="Photo of Alban Kurti" width="300" height="300">
+                </div>
+            </section>
+
+            <section class="courses">
+                <h2>Web Certificate Courses</h2>
+
+                <div class="course-buttons">
+                    <button id="all">All</button>
+                    <button id="wdd">WDD</button>
+                    <button id="cse">CSE</button>
+                </div>
+
+                <div id="course-container"></div>
+
+                <p id="credits"></p>
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+        <div class="social-links">
+
+            <a href="https://github.com/AlbanKurti122" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <span class="social-icon">GitHub</span>
+            </a>
+
+            <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+            >
+                <span class="social-icon">LinkedIn</span>
+            </a>
+
+        </div>
+
+        <p>
+            &copy;<span id="currentyear"></span>
+            Alban Kurti | Albania
+        </p>
+
+        <p id="lastModified"></p>
+
+    </footer>
+
+</body>
+</html>
