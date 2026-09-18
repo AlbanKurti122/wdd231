@@ -1,0 +1,9 @@
+@media (min-width: 1000px) {
+    .grid-view {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .member-card {
+        min-height: 345px;
+    }
+}

@@ -1,0 +1,74 @@
+[
+    {
+        "name": "Berat Tourism & Travel",
+        "address": "Rruga Antipatrea, Berat, Albania",
+        "phone": "+355 69 111 2233",
+        "website": "https://example.com/berat-tourism",
+        "image": "berat-tourism.svg",
+        "membershipLevel": 3,
+        "description": "Tourism services and travel planning for visitors exploring Berat and southern Albania."
+    },
+    {
+        "name": "Osumi Construction",
+        "address": "Rruga Ura Vajgurore, Berat, Albania",
+        "phone": "+355 69 222 3344",
+        "website": "https://example.com/osumi-construction",
+        "image": "osumi-construction.svg",
+        "membershipLevel": 2,
+        "description": "Construction and renovation services for residential and commercial projects."
+    },
+    {
+        "name": "Mangalemi Foods",
+        "address": "Rruga Mihal Komnena, Berat, Albania",
+        "phone": "+355 69 333 4455",
+        "website": "https://example.com/mangalemi-foods",
+        "image": "mangalemi-foods.svg",
+        "membershipLevel": 1,
+        "description": "Local food production and distribution with a focus on regional products."
+    },
+    {
+        "name": "Tomorri Tech Solutions",
+        "address": "Bulevardi Republika, Berat, Albania",
+        "phone": "+355 69 444 5566",
+        "website": "https://example.com/tomorri-tech",
+        "image": "tomorri-tech.svg",
+        "membershipLevel": 3,
+        "description": "Web development, IT support, and digital services for local businesses."
+    },
+    {
+        "name": "Kala Design Studio",
+        "address": "Rruga 28 Nëntori, Berat, Albania",
+        "phone": "+355 69 555 6677",
+        "website": "https://example.com/kala-design",
+        "image": "kala-design.svg",
+        "membershipLevel": 2,
+        "description": "Graphic design, branding, photography, and creative media services."
+    },
+    {
+        "name": "Antipatrea Hotel",
+        "address": "Rruga Antipatrea, Berat, Albania",
+        "phone": "+355 69 666 7788",
+        "website": "https://example.com/antipatrea-hotel",
+        "image": "antipatrea-hotel.svg",
+        "membershipLevel": 3,
+        "description": "Hospitality and accommodation services for visitors and business travelers."
+    },
+    {
+        "name": "Gorica Accounting",
+        "address": "Rruga Gorica, Berat, Albania",
+        "phone": "+355 69 777 8899",
+        "website": "https://example.com/gorica-accounting",
+        "image": "gorica-accounting.svg",
+        "membershipLevel": 1,
+        "description": "Accounting, bookkeeping, and small-business financial support."
+    },
+    {
+        "name": "Berat Energy Services",
+        "address": "Rruga Partizani, Berat, Albania",
+        "phone": "+355 69 888 9900",
+        "website": "https://example.com/berat-energy",
+        "image": "berat-energy.svg",
+        "membershipLevel": 2,
+        "description": "Energy efficiency consulting and electrical maintenance services."
+    }
+]

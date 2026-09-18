@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Berat Chamber of Commerce | Directory</title>
+    <meta name="description" content="Explore the business member directory of the Berat Chamber of Commerce in Berat, Albania.">
+    <meta name="author" content="Alban Kurti">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Berat Chamber of Commerce | Business Directory">
+    <meta property="og:description" content="Explore local businesses and organizations that are members of the Berat Chamber of Commerce.">
+    <meta property="og:image" content="https://albankurti122.github.io/wdd231/chamber/images/chamber-social.svg">
+    <meta property="og:url" content="https://albankurti122.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/larger.css">
+
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="index.html" aria-label="Berat Chamber of Commerce home">
+                <img src="images/chamber-logo.svg" alt="" width="52" height="52">
+                <span class="brand-text">
+                    <strong>Berat Chamber</strong>
+                    <small>of Commerce</small>
+                </span>
+            </a>
+
+            <button id="menu-button" class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="main-nav">
+                <span class="hamburger">☰</span>
+            </button>
+
+            <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="directory.html" class="active" aria-current="page">Directory</a>
+                <a href="join.html">Join</a>
+                <a href="discover.html">Discover</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-heading">
+            <h1>Business Directory</h1>
+            <p>Discover businesses and organizations that are part of the Berat Chamber of Commerce.</p>
+        </section>
+
+        <section class="directory-controls" aria-label="Directory display options">
+            <h2 class="visually-hidden">Choose directory view</h2>
+            <button id="grid-button" class="view-button active" type="button" aria-pressed="true">
+                <span aria-hidden="true">▦</span> Grid
+            </button>
+            <button id="list-button" class="view-button" type="button" aria-pressed="false">
+                <span aria-hidden="true">☰</span> List
+            </button>
+        </section>
+
+        <section id="members" class="members grid-view" aria-label="Chamber member businesses" aria-live="polite">
+            <p class="loading">Loading chamber members...</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <section>
+                <h2>Berat Chamber of Commerce</h2>
+                <address>
+                    Rruga Antipatrea<br>
+                    Berat, Albania
+                </address>
+                <p>Email: info@beratchamber.al<br>Phone: +355 69 000 0000</p>
+            </section>
+
+            <section>
+                <h2>WDD 231</h2>
+                <p>Alban Kurti</p>
+                <p>&copy; <span id="current-year"></span> Berat Chamber of Commerce</p>
+                <p>Last Modification: <span id="last-modified"></span></p>
+            </section>
+        </div>
+    </footer>
+</body>
+</html>

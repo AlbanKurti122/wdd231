@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<rect width="1200" height="630" fill="#12355b"/>
+<circle cx="245" cy="315" r="125" fill="#f4a261"/>
+<path d="M180 345 L245 265 L310 345" fill="none" stroke="#12355b" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M205 345 V395 H285 V345" fill="none" stroke="#fff" stroke-width="15"/>
+<path d="M230 395 V325 H260 V395" fill="none" stroke="#fff" stroke-width="15"/>
+<text x="430" y="285" font-family="Arial, sans-serif" font-size="64" font-weight="700" fill="#ffffff">Berat Chamber</text>
+<text x="430" y="355" font-family="Arial, sans-serif" font-size="48" fill="#f4a261">of Commerce</text>
+<text x="430" y="420" font-family="Arial, sans-serif" font-size="28" fill="#ffffff">Business Directory • Berat, Albania</text>
+</svg>
