@@ -365,3 +365,241 @@ main {
         grid-template-columns: 1fr 1fr;
     }
 }
+
+.hero { position: relative; overflow: hidden; border-radius: 8px; margin-bottom: 1.5rem; background: var(--navy); }
+.hero > img { display: block; width: 100%; height: auto; min-height: 300px; object-fit: cover; }
+.hero-content { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 1.25rem; background: linear-gradient(90deg, rgba(18,53,91,.9), rgba(18,53,91,.25)); color: var(--white); }
+.hero h1 { max-width: 560px; margin: .2rem 0 .7rem; font-size: clamp(1.8rem, 7vw, 3.2rem); line-height: 1.1; }
+.hero p { max-width: 560px; margin: .3rem 0 1rem; }
+.eyebrow { color: var(--orange); font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }
+.cta-button { display: inline-block; padding: .75rem 1.1rem; border-radius: 5px; background: var(--orange); color: var(--navy-dark); font-weight: 700; text-decoration: none; }
+.cta-button:hover { background: var(--white); }
+.home-grid { display: grid; grid-template-columns: 1fr; gap: 1rem; margin-bottom: 1rem; }
+.home-panel { padding: 1rem; margin-bottom: 1rem; border: 1px solid var(--border); border-radius: 8px; background: var(--white); box-shadow: var(--shadow); }
+.home-panel h2 { margin-top: 0; color: var(--navy); }
+.events article { padding: .7rem 0; border-bottom: 1px solid var(--border); }
+.events article:last-child { border-bottom: 0; }
+.events h3 { margin-bottom: .25rem; }
+.current-temp { margin: 0; color: var(--navy); font-size: 2.5rem; font-weight: 700; }
+.forecast-grid, .spotlight-grid { display: grid; grid-template-columns: 1fr; gap: .75rem; }
+.forecast-grid article { padding: .6rem; border: 1px solid var(--border); border-radius: 5px; text-align: center; background: var(--cream); }
+.forecast-grid h4 { margin: 0; color: var(--navy); }
+.forecast-grid p { margin: .2rem 0; }
+.weather-note { font-size: .8rem; color: var(--muted); }
+.spotlight-card { padding: 1rem; border: 1px solid var(--border); border-radius: 6px; text-align: center; background: var(--cream); }
+.spotlight-card img { width: 150px; height: 95px; object-fit: contain; }
+.spotlight-card h3 { margin: .3rem 0; color: var(--navy); }
+.spotlight-card p { margin: .25rem 0; overflow-wrap: anywhere; }
+
+/* W04 Join Page */
+.join-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+}
+
+.join-form-section,
+.membership-levels,
+.confirmation-card {
+    padding: 1.1rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--white);
+    box-shadow: var(--shadow);
+}
+
+.join-form-section h2,
+.membership-levels h2,
+.confirmation-card h2 {
+    margin-top: 0;
+    color: var(--navy);
+}
+
+#membership-form {
+    display: grid;
+    gap: 1rem;
+}
+
+#membership-form > label {
+    display: grid;
+    gap: 0.35rem;
+    color: var(--navy);
+    font-weight: 700;
+}
+
+#membership-form input[type="text"],
+#membership-form input[type="email"],
+#membership-form input[type="tel"],
+#membership-form textarea {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #9aa9b6;
+    border-radius: 5px;
+    font: inherit;
+    color: var(--text);
+    background: var(--white);
+}
+
+#membership-form input:focus,
+#membership-form textarea:focus {
+    outline: 3px solid rgba(244, 162, 97, 0.35);
+    border-color: var(--navy);
+}
+
+#membership-form input:required:invalid:not(:focus) {
+    border-left: 4px solid #b33a3a;
+}
+
+#membership-form fieldset {
+    display: grid;
+    gap: 0.45rem;
+    margin: 0;
+    padding: 0.8rem;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+}
+
+#membership-form legend {
+    padding: 0 0.3rem;
+    color: var(--navy);
+    font-weight: 700;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+}
+
+.radio-option input {
+    accent-color: var(--navy);
+}
+
+.submit-button {
+    padding: 0.8rem 1rem;
+    border: 0;
+    border-radius: 5px;
+    background: var(--navy);
+    color: var(--white);
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.submit-button:hover,
+.submit-button:focus-visible {
+    background: var(--navy-dark);
+}
+
+.membership-levels {
+    display: grid;
+    gap: 0.9rem;
+}
+
+.membership-levels h2 {
+    margin-bottom: 0.2rem;
+}
+
+.membership-card {
+    padding: 1rem;
+    border: 1px solid var(--border);
+    border-radius: 7px;
+    background: var(--cream);
+    box-shadow: var(--shadow);
+    opacity: 0;
+    transform: translateY(25px);
+    animation: membership-enter 0.65s ease forwards;
+}
+
+.membership-card:nth-of-type(2) { animation-delay: 0.12s; }
+.membership-card:nth-of-type(3) { animation-delay: 0.24s; }
+.membership-card:nth-of-type(4) { animation-delay: 0.36s; }
+
+.membership-card h3 {
+    margin: 0 0 0.35rem;
+    color: var(--navy);
+}
+
+.membership-card p {
+    margin: 0 0 0.7rem;
+    color: var(--muted);
+}
+
+.membership-card a {
+    font-weight: 700;
+}
+
+@keyframes membership-enter {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.membership-modal {
+    width: min(92vw, 520px);
+    padding: 0;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 0 8px 30px rgba(0,0,0,.3);
+}
+
+.membership-modal::backdrop {
+    background: rgba(11, 39, 69, 0.65);
+}
+
+.membership-modal > div {
+    padding: 1.4rem;
+}
+
+.membership-modal h2 {
+    margin-top: 0;
+    color: var(--navy);
+}
+
+.membership-modal li {
+    margin-bottom: 0.5rem;
+}
+
+.close-modal {
+    padding: 0.65rem 1rem;
+    border: 0;
+    border-radius: 5px;
+    background: var(--navy);
+    color: var(--white);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.confirmation-card dl {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+}
+
+.confirmation-card dt {
+    margin-top: 0.65rem;
+    color: var(--navy);
+    font-weight: 700;
+}
+
+.confirmation-card dd {
+    margin: 0;
+    padding: 0.65rem;
+    border-radius: 4px;
+    background: var(--background);
+    overflow-wrap: anywhere;
+}
+
+.confirmation-card .cta-button {
+    margin-top: 1rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .membership-card {
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
+}
