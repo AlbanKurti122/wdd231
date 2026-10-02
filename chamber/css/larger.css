@@ -7,3 +7,22 @@
         min-height: 345px;
     }
 }
+
+@media (min-width: 700px) {
+    .hero-content { padding: 2.5rem; }
+    .home-grid { grid-template-columns: 1fr 1fr; align-items: stretch; }
+    .spotlight-grid { grid-template-columns: repeat(3, 1fr); }
+    .forecast-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (min-width: 900px) {
+    .join-layout {
+        grid-template-columns: minmax(0, 1.5fr) minmax(280px, 0.85fr);
+        align-items: start;
+    }
+
+    .membership-levels {
+        position: sticky;
+        top: 1rem;
+    }
+}
